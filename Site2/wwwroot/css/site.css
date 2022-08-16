@@ -61,6 +61,14 @@ html, body {
     font-size:16px;
     font-weight:100;
     letter-spacing:1px;
+    color:white;
+}
+.header-menu a:hover {
+    text-decoration: none;
+    color: #fc635e;
+    border-bottom: 4px solid #fc635e;
+    padding-top: 8px;
+    padding-bottom: 4px;
 }
 
 .main-content {
@@ -119,14 +127,19 @@ html, body {
     background-color: #fc635e;
 }
 
-.footer-button{
-    width:28px;
-    height:28px;
-    border-radius:14px;
+.footer-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    content: url(/icons/arrow-down-w.svg);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
+    position: relative;
+    color:white;
 }
-.footer-button:after {
-    content: "\F128";
-}
+
+
     
 
 
