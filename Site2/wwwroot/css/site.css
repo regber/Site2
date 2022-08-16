@@ -130,13 +130,55 @@ html, body {
 .footer-button {
     width: 28px;
     height: 28px;
-    border-radius: 14px;
+    border-radius: 50%;
+    border: none;
     content: url(/icons/arrow-down-w.svg);
     left: 50%;
     transform: translateX(-50%);
     top: 240px;
     position: relative;
-    color:white;
+    color: white;
+    display: block;
+}
+
+.mouse-path {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    motion-path: path('M118,325V25C115.264,10.756,101.875,1.724,91,2H-4');
+    offset-path: path('M118,325V25C115.264,10.756,101.875,1.724,91,2H-4');
+    animation: move 10s infinite alternate ease-in-out, blink .5s infinite alternate ease-in-out;
+}
+
+@keyframes move{
+    0%{
+        motion--offset:0%;
+        offset-distance:0%;
+
+    }
+    100% {
+        motion--offset: 100%;
+        offset-distance:100%;
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity:.6s;
+    }
+    100% {
+        opacity: 1s;
+    }
 }
 
 
