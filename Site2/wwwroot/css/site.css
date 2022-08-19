@@ -147,18 +147,21 @@ html, body {
     top: 0;
 }
 
-.dot {
-    width: 20px;
-    height: 20px;
-    background-color: aqua;
-    border-radius: 25%;
+.movement {
+    width: 47px;
+    height: 32px;
+    /*transform: rotate(180deg) scale(0.8);*/
+    /*background-color: aqua;*/
+    /*border-radius: 25%;*/
     position: absolute;
     top: 0;
     left: 0;
     motion-path: path('M118,325V25C115.264,10.756,101.875,1.724,91,2H-4');
     offset-path: path('M118,325V25C115.264,10.756,101.875,1.724,91,2H-4');
     animation: move 10s infinite alternate ease-in-out, blink .5s infinite alternate ease-in-out;
+
 }
+
 
 @keyframes move{
     0%{

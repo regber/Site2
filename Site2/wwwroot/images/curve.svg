@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="325" viewBox="0 0 120 325">
+<svg xmlns="http://www.w3.org/2000/svg" width="119.5" height="324.5" viewBox="0 0 119.5 324.5">
   <defs>
     <style>
-      .cls-1 {
-        fill: none;
-        stroke: #fff;
-        stroke-width: 2px;
-        stroke-dasharray: 8 4;
-        fill-rule: evenodd;
-      }
-    </style>
+		.cls-1 {
+		fill: none;
+		opacity:0.5;
+		stroke: #7d7872;
+		stroke-width: 1px;
+		stroke-dasharray: 4 4 4 4 4 4;
+		fill-rule: evenodd;
+		}
+	</style>
   </defs>
-  <path id="Фигура_2" data-name="Фигура 2" class="cls-1" d="M118,325V25C115.264,10.756,101.875,1.724,91,2H-4"/>
+  <path id="Фигура_2" data-name="Фигура 2" class="cls-1" d="M118,325V25C115.264,10.756,101.875,1.724,91,2H-4" transform="translate(0 -0.5)"/>
 </svg>

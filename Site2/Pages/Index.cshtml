@@ -28,7 +28,15 @@
     <button class="button unfilled">I want clients</button>
     <button class="footer-button filled"><img src="~/icons/arrow-down-w.svg" /></button>
     <img class="mouse-path" src="~/images/curve.svg" />
-    <div class="dot"></div>
+    <svg width="600" height="400" style="position: absolute;left: 0;top: 0;">
+        <mask id="svgmask1">
+            <polygon class="movement" fill="#ffffff" points="-24 -17,24 -17, 24 17, -24 17"></polygon>
+        </mask>
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#svgmask1)" href="/images/background_main.png"></image>
+    </svg>
+    <div class="movement">
+        <img src="~/images/mouse.png">
+    </div>
     @*<h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
 </div>
