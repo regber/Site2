@@ -25,18 +25,26 @@
         <p class="">Your clients on the internet. Learn how to receive them.</p>
         <div></div>
     </div>
-    <button class="button unfilled">I want clients</button>
-    <button class="footer-button filled"><img src="~/icons/arrow-down-w.svg" /></button>
-    <img class="mouse-path" src="~/images/curve.svg" />
-    <svg width="600" height="400" style="position: absolute;left: 0;top: 0;">
-        <mask id="svgmask1">
-            <polygon class="movement" fill="#ffffff" points="-24 -17,24 -17, 24 17, -24 17"></polygon>
-        </mask>
-        <image xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#svgmask1)" href="/images/background_main.png"></image>
-    </svg>
-    <div class="movement">
-        <img src="~/images/mouse.png">
+    <div class="buttons">
+        <button class="main-button button unfilled">I want clients</button>
+        <button class="footer-button filled"><img src="~/icons/arrow-down-w.svg" /></button>
+        <div class="mouse-form">
+            <img class="mouse-path" src="~/images/curve.svg" />
+            <div class="movement mouse-path">
+                <img src="~/images/mouse.png">
+            </div>
+        </div>
     </div>
+
+
+    @*<svg class="svg">
+            <mask id="mask" x="0" y="0" maskContentUnits="userSpaceOnUse">
+                <circle stroke="gray" fill="white" class="movement" r="23.5px" cy="700px" cx="0%"></circle>
+            </mask>
+            <image id="pattern" xmlns:xlink="http://www.w3.org/1999/xlink" mask="url(#mask)" href="https://localhost:44339/images/background_main.png"></image>
+        </svg>*@
+
+
     @*<h1 class="display-4">Welcome</h1>
         <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
 </div>
