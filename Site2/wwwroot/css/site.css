@@ -12,9 +12,11 @@ html, body {
 .main {
     background-image: url(/images/background_main.png);
     background-repeat: no-repeat;
-    background-size: 1260px 765px;/*100% 100%;*/
+    background-size: /*1260px 765px;*/100% 100%;
     /*background-position: 0px 0px;*/
-    height: 765px;
+    height: 100%;
+    min-height:765px;
+    min-width:1260px;
     /*aspect-ratio: 1/1;*/
     padding: 0 160px;
 }
@@ -62,6 +64,7 @@ html, body {
     font-weight:100;
     letter-spacing:1px;
     color:white;
+    margin:0 5px;
 }
 .header-menu a:hover {
     text-decoration: none;
@@ -104,6 +107,13 @@ html, body {
     margin-top: 15px;
 }
 
+.buttons {
+    --central-row-height: 100px;
+    display: grid;
+    grid-template-columns: auto 205px auto;
+    grid-template-rows: 1fr var(--central-row-height) 1fr;
+}
+
 .button {
     left: 50%;
     position: relative;
@@ -127,6 +137,15 @@ html, body {
     background-color: #fc635e;
 }
 
+.main-button {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    top: 50%;
+}
+
 .footer-button {
     width: 28px;
     height: 28px;
@@ -134,36 +153,38 @@ html, body {
     border: none;
     content: url(/icons/arrow-down-w.svg);
     left: 50%;
-    transform: translateX(-50%);
-    top: 240px;
+    transform: translate(-50%, -50%);
     position: relative;
     color: white;
-    display: block;
+    grid-column: 2;
+    grid-row: 3;
+    top: 50%;
+}
+
+.mouse-form {
+    position: relative;
+    grid-column: 3;
+    grid-row: 1/4;
+    overflow-y: hidden;
 }
 
 .mouse-path {
+    margin-top: 28px;
     position: absolute;
-    left: 0;
+    left: 0px;
     top: 0;
 }
 
 .movement {
     width: 47px;
     height: 32px;
-    /*transform: rotate(180deg) scale(0.8);*/
-    /*background-color: aqua;*/
-    /*border-radius: 25%;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    motion-path: path('M118,325V25C115.264,10.756,101.875,1.724,91,2H-4');
-    offset-path: path('M118,325V25C115.264,10.756,101.875,1.724,91,2H-4');
-    animation: move 10s infinite alternate ease-in-out, blink .5s infinite alternate ease-in-out;
-
+    offset-position: center top;
+    motion-path: path('M118,799V25C115.264,10.756,101.875,1.724,91,2H-4');
+    offset-path: path('M118,799V25C115.264,10.756,101.875,1.724,91,2H-4');
+    animation: move 10s infinite alternate ease-in-out;
 }
 
-
-@keyframes move{
+@keyframes move {
     0%{
         motion--offset:0%;
         offset-distance:0%;
@@ -172,15 +193,6 @@ html, body {
     100% {
         motion--offset: 100%;
         offset-distance:100%;
-    }
-}
-
-@keyframes blink{
-    0%{
-        opacity:.6s;
-    }
-    100% {
-        opacity: 1s;
     }
 }
 
