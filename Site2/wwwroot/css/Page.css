@@ -1,0 +1,38 @@
+﻿body {
+}
+
+.hex {
+    
+    stroke-width: 6;
+    fill-rule: evenodd;
+}
+
+.hex-container{
+    width:fit-content;
+    height:fit-content;
+
+}
+
+.hex-container > img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+.hex-container > svg {
+    height: 132px;
+    width: 112px;
+}
+
+.hex.filled {
+    stroke: #fe8682;
+    fill: #fc635e;
+}
+
+.hex.unfilled {
+    stroke: #fc635e;
+    fill: transparent;
+}
+
+
+
+
