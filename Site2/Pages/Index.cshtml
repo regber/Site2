@@ -4,6 +4,10 @@
     ViewData["Title"] = "Home page";
 }
 
+@section Scripts{
+    <script src="~/js/main.js"></script>
+}
+
 <div class="main">
     <div class="header">
         <div class="header-logo">
@@ -11,8 +15,7 @@
             <div class="title">Daisy</div>
         </div>
         <div class="header-menu">
-            <a href="#">ABOUT</a>
-            <a href="#">PORTFOLIO</a>
+            <a asp-page="Page2">ABOUT</a>
             <a href="#">SERVICES</a>
             <a href="#">CONTACT</a>
         </div>
