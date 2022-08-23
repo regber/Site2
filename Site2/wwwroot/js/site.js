@@ -4,6 +4,7 @@
 // Write your Javascript code.
 var buttons = document.querySelector('.buttons');
 var movementObject = document.querySelector('.movement');
+var mouseScroll = document.querySelector('.mouse-scroll-active');
 var mouseTopMoveLimit = 97;
 var mouseLowerMoveLimit = 0;
 var mouseCurrentPos = 97;
@@ -12,12 +13,14 @@ var intervalEvent = null;
 
 $(window).ready(function(){
     SetCurveSize();
-    SetMouseLowerMoveLimit()
+    SetMouseLowerMoveLimit();
+    SetMousePosOnResize();
 });
 
 $(window).resize(function () {
     SetCurveSize();
     SetMouseLowerMoveLimit();
+    SetMousePosOnResize();
 });
 
 window.addEventListener("wheel", function (e) {
@@ -34,6 +37,7 @@ window.addEventListener("wheel", function (e) {
             MouseMove(mouseCurrentPos - 10);
         }
     }
+    SetMouseScrollOpacity();
 });
 
 function SetCurveSize() {
@@ -66,10 +70,10 @@ function MouseMove(newPosition) {
     function frame() {
         //Проверяем в какую сторону смещается мышь
         if (newPosition >= mouseCurrentPos) {
-            mouseCurrentPos++;
+            mouseCurrentPos+=0.5;
         }
         else {
-            mouseCurrentPos--;
+            mouseCurrentPos-=0.5;
         }
 
         if (mouseLowerMoveLimit >= mouseCurrentPos || mouseCurrentPos >= mouseTopMoveLimit || newPosition == mouseCurrentPos) {
@@ -90,5 +94,31 @@ function MouseMove(newPosition) {
 
 function SetMousePosition(position){
     movementObject.style.setProperty('offset-distance', position + '%');
+}
+
+function SetMouseScrollOpacity(){
+    let mouseScrollActive = null;
+    let opacity = 1.1;
+
+    clearInterval(mouseScrollActive);
+
+    mouseScrollActive = setInterval(blink, 70);
+
+    function blink() {
+        if (opacity <= 0) {
+            clearInterval(mouseScrollActive);
+        }
+        else {
+            opacity -= 0.1;
+            mouseScroll.style.setProperty('opacity', opacity);
+        }
+    }
+}
+
+function SetMousePosOnResize() {
+    if (mouseCurrentPos <= mouseLowerMoveLimit) {
+        mouseCurrentPos = mouseLowerMoveLimit;
+        SetMousePosition(mouseCurrentPos);
+    }
 }
 

@@ -175,6 +175,13 @@ html, body {
     left: 0px;
     top: 0;
 }
+.mouse-path>img {
+    position:absolute;
+}
+
+.mouse-scroll-active{
+    opacity:0;
+}
 
 .movement {
     width: 47px;
