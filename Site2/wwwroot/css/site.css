@@ -187,20 +187,16 @@ html, body {
     width: 47px;
     height: 32px;
     offset-position: center top;
-    motion-path: path('M118,799V25C115.264,10.756,101.875,1.724,91,2H-4');
     offset-path: path('M118,799V25C115.264,10.756,101.875,1.724,91,2H-4');
-    /*animation: move 10s infinite alternate ease-in-out;*/
     offset-distance: 97%;
 }
 
 @keyframes move {
     0%{
-        motion--offset:0%;
         offset-distance:0%;
 
     }
     100% {
-        motion--offset: 100%;
         offset-distance:100%;
     }
 }
