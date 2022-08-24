@@ -84,16 +84,15 @@ html, body {
     margin-top: 193px;
 }
 
-.main-content p:first-child {
+.content {
     font-weight: bold;
     font-size: 51px;
     text-transform: uppercase;
     text-align: center;
     line-height: 0.7;
     vertical-align: top;
-        
 }
-.main-content p:first-child span {
+.content span {
     color: #fc635e;
 }
 
@@ -126,8 +125,8 @@ html, body {
     height: 56px;
  
     border-radius: 7px;
-    font-weight: 100;
-    font-size: 24.01px;
+    font-weight: 300;
+    font-size: 24px;
 }
 
 .unfilled {
@@ -150,6 +149,7 @@ html, body {
     grid-column: 2;
     grid-row: 1;
     top: 50%;
+    border: 2px solid #fc635e;
 }
 
 .main-footer-button {
