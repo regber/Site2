@@ -161,8 +161,6 @@ html, body {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    position: absolute;
-    bottom: 15px;
 }
 
 .mouse-form {
@@ -170,7 +168,7 @@ html, body {
     grid-column: 3;
     grid-row: 1/4;
     overflow-y: hidden;
-    margin-left:10px;
+    
 }
 
 .mouse-path {
@@ -178,6 +176,7 @@ html, body {
     position: absolute;
     left: 0px;
     top: 0;
+    margin-left: 10px;
 }
 .mouse-path>img {
     position:absolute;
