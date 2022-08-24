@@ -120,21 +120,23 @@ html, body {
     transform: translateX(-50%);
     width: 205px;
     height: 56px;
-    border: 2px solid #fc635e;
+ 
     border-radius: 7px;
     font-weight: 100;
     font-size: 24.01px;
 }
 
 .unfilled {
+    border: 1px solid #fc635e;
     background-color: transparent;
     color: #fc635e;
-    letter-spacing:0.65px;
+    letter-spacing: 0.65px;
 }
 
 .filled {
     color: white;
     background-color: #fc635e;
+    border: none;
 }
 
 .main-button {
@@ -146,19 +148,21 @@ html, body {
     top: 50%;
 }
 
+.main-footer-button {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    grid-column: 2;
+    grid-row: 3;
+    top: 50%;
+}
+
 .footer-button {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    border: none;
-    content: url(/icons/arrow-down-w.svg);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    color: white;
-    grid-column: 2;
-    grid-row: 3;
-    top: 50%;
+    position: absolute;
+    bottom: 15px;
 }
 
 .mouse-form {
