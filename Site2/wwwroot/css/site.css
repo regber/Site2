@@ -123,10 +123,18 @@ html, body {
     transform: translateX(-50%);
     width: 205px;
     height: 56px;
- 
     border-radius: 7px;
     font-weight: 300;
     font-size: 24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    border: 2px solid #fc635e;
+}
+
+.button.unfilled {
+    border: 2px solid #fc635e;
 }
 
 .unfilled {
@@ -143,13 +151,8 @@ html, body {
 }
 
 .main-button {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
     grid-column: 2;
     grid-row: 1;
-    top: 50%;
-    border: 2px solid #fc635e;
 }
 
 .main-footer-button {
