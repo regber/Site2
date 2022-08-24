@@ -1,0 +1,15 @@
+﻿.svgLine {
+    stroke-dasharray: 1600;
+    stroke-dashoffset: 0;
+    animation: dash 10s ease-out alternate;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1600;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
