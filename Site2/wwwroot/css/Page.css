@@ -1,26 +1,114 @@
-﻿body {
+﻿*,p{
+    margin:0;
+    padding:0;
 }
 
+body {
+    font-family: 'PF Encore Sans Pro';
+    font-weight: 100;
+    color: #adadad;
+    letter-spacing: 0.55px;
+}
+
+body>div {
+    display: grid;
+    justify-items: center;
+    min-width:1260px;
+    padding-top:56px;
+}
+
+.header-title {
+    font-size: 28px;
+    color: #868686;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: fit-content;
+    border-bottom: 1px #adadad solid;
+}
+.header-title span {
+    color: #fc635e
+}
+
+.header-text{
+    font-size:20px;
+    line-height:25px;
+    width:508px;
+    margin-top:18px;
+    text-align:center;
+}
+
+.content {
+    margin-top: 80px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,auto);
+    width: 100%;
+    padding: 0 160px;
+}
+
+a {
+    font-size: 20px;
+    color: #868686;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+a:hover {
+    color: #6c6c6c;
+    text-decoration: none;
+}
+
+
 .hex {
-    
     stroke-width: 6;
     fill-rule: evenodd;
 }
 
 .hex-container{
-    width:fit-content;
-    height:fit-content;
+    display:inline-block;
+    text-align:center;
 
 }
 
-.hex-container > img {
-    position: relative;
-    top: 50%;
-    left: 50%;
+.hex-container > div {
+    height: fit-content;
+    width: 204px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
 }
-.hex-container > svg {
-    height: 132px;
+
+.hex-container img {
+    position: absolute;
+}
+.hex-container svg {
+    height: 116px;
     width: 112px;
+}
+
+svg.a-line {
+    width: 57px;
+    height: 1px;
+    display: block;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-top: 4px;
+}
+
+.hex-container p {
+    height: 60px;
+    width: 204px;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    margin-top: 18px;
+    letter-spacing: 0.7px;
+    word-spacing: 0.8px;
+    line-height: 18px;
 }
 
 .hex.filled {
@@ -33,6 +121,10 @@
     fill: transparent;
 }
 
+.page-footer-button {
+    position:absolute;
+    bottom:14px;
+}
 
 
 
