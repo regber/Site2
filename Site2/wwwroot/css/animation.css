@@ -1,7 +1,7 @@
 ﻿.svgLine {
     stroke-dasharray: 1600;
     stroke-dashoffset: 0;
-    animation: dash 10s ease-out alternate;
+    animation: dash 10s ease-out;
 }
 
 @keyframes dash {
@@ -11,5 +11,84 @@
 
     to {
         stroke-dashoffset: 0;
+    }
+}
+.page4 img[src*="screen"] {
+    animation: bounceIn 1s linear 2s forwards running;
+    opacity:0;
+}
+
+.page4 img[src*="head"] {
+    animation: bounceIn 1s linear 2.8s forwards running;
+    opacity: 0;
+}
+.page4 img[src*="hand"] {
+    animation: bounceIn 1s linear 4.5s forwards running;
+    opacity: 0;
+}
+.page4 img[src*="rocket"] {
+    animation: bounceIn 1s linear 9.8s forwards running;
+    opacity: 0;
+}
+
+.content > div div:nth-of-type(2) {
+    animation: rise 0.5s linear 2s forwards running;
+    opacity: 0;
+}
+.content > div div:nth-of-type(3) {
+    animation: rise 0.5s linear 2.8s forwards running;
+    opacity: 0;
+}
+.content > div div:nth-of-type(4) {
+    animation: rise 0.5s linear 4.5s forwards running;
+    opacity: 0;
+}
+
+@keyframes rise{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, to {
+        -webkit-animation-timing-function: cubic-bezier(.215,.61,.355,1);
+        animation-timing-function: cubic-bezier(.215,.61,.355,1)
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3,.3,.3);
+        transform: scale3d(.3,.3,.3)
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1,1.1,1.1);
+        transform: scale3d(1.1,1.1,1.1)
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9,.9,.9);
+        transform: scale3d(.9,.9,.9)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03,1.03,1.03);
+        transform: scale3d(1.03,1.03,1.03)
+    }
+
+    80% {
+        -webkit-transform: scale3d(.97,.97,.97);
+        transform: scale3d(.97,.97,.97)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scale3d(1);
     }
 }
