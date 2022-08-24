@@ -10,15 +10,17 @@ html, body {
 }
 
 .main {
-    background-image: url(/images/background_main.png);
-    background-repeat: no-repeat;
-    background-size: /*1260px 765px;*/100% 100%;
-    /*background-position: 0px 0px;*/
     height: 100%;
     min-height:765px;
     min-width:1260px;
-    /*aspect-ratio: 1/1;*/
     padding: 0 160px;
+}
+.main.background {
+    background-image: url(/images/background_main.png);
+}
+.background {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .header {
