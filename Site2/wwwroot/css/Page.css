@@ -10,7 +10,7 @@ body {
     letter-spacing: 0.55px;
 }
 
-body>div {
+.page2 {
     display: grid;
     justify-items: center;
     min-width:1260px;
@@ -130,7 +130,5 @@ svg.a-line {
 .page3.background {
     background-image: url(/images/background_page3.png);
 }
-
-
 
 
