@@ -152,8 +152,6 @@ html, body {
     transform: translate(-50%, -50%);
     position: relative;
     top: 50%;
-    position: relative;
-    transform: translateX(-50%);
 }
 
 .main-footer-button {
