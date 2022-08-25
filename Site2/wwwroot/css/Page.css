@@ -418,3 +418,48 @@ svg.a-line {
     height: 44px;
     font-size: 20px;
 }
+
+.page8 {
+    display: grid;
+    justify-items: center;
+    min-width: 1260px;
+    padding-top: 40px;
+    height: 100%;
+    grid-template-rows: auto auto 1fr auto 50px;
+    align-items: center;
+}
+
+.page8 .header-menu {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+    height: 60px;
+    margin-top: 40px;
+    width: 939px;
+    color: #adadad;
+}
+
+.page8 .header-menu a,.page8 .header-menu a {
+    margin: 0 15px;
+}
+
+.page8 .header-menu a {
+    color:  #fc635e
+}
+
+.page8 .content {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(100px,857px));
+
+}
+
+.page8 .button {
+    width: 192px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
