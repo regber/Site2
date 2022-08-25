@@ -373,3 +373,48 @@ svg.a-line {
     height: 44px;
     font-size:20px;
 }
+
+.page7 {
+    display: grid;
+    justify-items: center;
+    min-width: 1260px;
+    height: 100%;
+    grid-template-rows: 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.page7 > button {
+    grid-column: 1/3;
+}
+
+.page7 div:nth-of-type(1) {
+    padding-left: 137px;
+    margin-top: -30px;
+}
+
+.page7 div:nth-of-type(2) {
+    padding-right: 153px;
+    margin-top: 14px;
+}
+
+.page7 > div .header-title {
+    border-bottom: none;
+    border-left: 10px solid #fc635e;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.page7 .text {
+    width: 400px;
+    line-height: 24px;
+    margin-top: 11px;
+}
+
+.page7 .button {
+    margin-top: 35px;
+    width: 167px;
+    height: 44px;
+    font-size: 20px;
+}
