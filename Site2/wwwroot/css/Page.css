@@ -530,10 +530,7 @@ svg.a-line {
     position: absolute;
 }
 
-.page8 .content > div:hover > .overlay p {
-    animation: bounceIn 2s linear;
-    transform-origin: 50% 5% 0;
-}
+
 
 
 
