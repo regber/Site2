@@ -234,19 +234,19 @@ svg.a-line {
     justify-items: center;
 }
 
-.content > div div:nth-of-type(1) {
+.content > div .text-content:nth-of-type(1) {
     left: 15px;
     top: 145px;
 }
-.content > div div:nth-of-type(2) {
+.content > div .text-content:nth-of-type(2) {
     left: 280px;
     top: 205px;
 }
-.content > div div:nth-of-type(3) {
+.content > div .text-content:nth-of-type(3) {
     left: 367px;
     top: 51px;
 }
-.content > div div:nth-of-type(4) {
+.content > div .text-content:nth-of-type(4) {
     left: 540px;
     top: 143px;
 }
@@ -449,10 +449,44 @@ svg.a-line {
 }
 
 .page8 .content {
-    display: grid;
-    grid-gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(100px,857px));
+    width: 964px;
+    line-height: 0px;
+    font-size: 0px; /*убираем отступы между инлайн объектами изображений*/
+    margin-top: 22px;
+    margin-bottom: 37px;
+}
 
+.page8 .content > div {
+    overflow: hidden;
+    height: 200px;
+    display: inline-block;
+    margin: 6px;
+    position: relative;
+}
+
+.page8 .content>div:nth-of-type(n) {
+    width: 469px;
+}
+.page8 .content>div:nth-of-type(2n) {
+    width: 222px;
+}
+.page8 .content>div:nth-of-type(3n) {
+    width: 235px;
+}
+.page8 .content>div:nth-of-type(4n) {
+    width: 222px;
+}
+.page8 .content>div:nth-of-type(5n) {
+    width: 235px;
+}
+.page8 .content>div:nth-of-type(6n) {
+    width: 469px;
+}
+.page8 .content img {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .page8 .button {
@@ -462,4 +496,48 @@ svg.a-line {
     color: #ffffff;
     margin-bottom: 20px;
 }
+
+
+
+.page8 .content > div:hover > .overlay::after {
+    content: attr(title);
+    font-size:28px;
+    position:absolute;
+    left:22px;
+    top:28px;
+    line-height:28px;
+
+}
+
+
+.overlay {
+    width: 100%;
+    height: 200px;
+    background-color: #fc635e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: -1;
+    color:white;
+}
+
+.overlay p {
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+    top: 50%;
+    position: absolute;
+}
+
+.page8 .content > div:hover > .overlay p {
+    animation: bounceIn 2s linear;
+    transform-origin: 50% 5% 0;
+}
+
+
+
+
+
+
 

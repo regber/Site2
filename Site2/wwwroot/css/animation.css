@@ -92,3 +92,23 @@
         transform: scale3d(1);
     }
 }
+
+.page8 .content > div:hover > .overlay p {
+    animation: bounceIn 2s linear;
+    transform-origin: 50% 5% 0;
+}
+
+.page8 .content > div:hover > img {
+    animation: blink 0.2s linear;
+    opacity: 0.22;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.22;
+    }
+}

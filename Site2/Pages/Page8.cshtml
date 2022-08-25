@@ -4,27 +4,58 @@
 }
 
 <link href="~/css/Page.css" rel="stylesheet" />
+<link href="~/css/animation.css" rel="stylesheet" />
 
 <div class="page8">
     <p class="header-title">portfolio</p>
     <div class="header-menu">
-        <a>all</a>
+        <a class="tooltip-links" href="#">all</a>
         <p>/</p>
-        <a>entertainment</a>
+        <a href="#">entertainment</a>
         <p>/</p>
-        <a>sport</a>
+        <a href="#">sport</a>
         <p>/</p>
-        <a>business</a>
+        <a href="#">business</a>
         <p>/</p>
-        <a>building</a>
+        <a href="#">building</a>
     </div>
     <div class="content">
-        <img src="/images/bikes.png" />
-        <img src="/images/colors.png" />
-        <img src="/images/bus.png" />
-        <img src="/images/post.png" />
-        <img src="/images/site.png" />
-        <img src="/images/cars.png" />
+        <div>
+            <img src="/images/bikes.png" />
+            <div title="mountain bikes" class="overlay">
+                <p>+</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/colors.png" />
+            <div title="colors" class="overlay">
+                <p>+</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/bus.png" />
+            <div title="bus" class="overlay">
+                <p>+</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/post.png" />
+            <div title="post" class="overlay">
+                <p>+</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/site.png" />
+            <div title="site" class="overlay">
+                <p>+</p>
+            </div>
+        </div>
+        <div>
+            <img src="/images/cars.png" />
+            <div title="cars" class="overlay">
+                <p>+</p>
+            </div>
+        </div>
     </div>
     <button class="button filled">I want landing page</button>
     <button class="footer-button unfilled page-footer-button" onclick="window.location.href='/Page9'"><img src="/icons/arrow-down-o.svg"></button>
