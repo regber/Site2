@@ -609,3 +609,99 @@ svg.a-line {
     width: 147px;
 }
 
+.page10 {
+    display: grid;
+    justify-items: center;
+    min-width: 1260px;
+    height: 100%;
+    grid-template-rows: auto 1fr 120px;
+    align-items: center;
+}
+
+.page10 .hex-container img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.page10 .hex-container {
+    position: relative;
+}
+    .page10 .hex-container:first-of-type {
+        margin-top: 52px;
+        margin-bottom: 24px;
+    }
+
+.page10 .hex-container:first-of-type svg {
+    width:74px;
+    height:90px;
+}
+
+.page10 .hex-container:last-of-type {
+    height: 120px;
+    overflow: hidden;
+}
+
+.page10 .hex-container:last-of-type svg {
+    height: 248px;
+    width: 216px;
+}
+
+.page10 .hex-container:last-of-type p {
+    left: 50%;
+    top: 90px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.page10 .content > div:first-of-type {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+}
+.page10 .content .text {
+    width: 335px;
+    height: 60px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.page10 .content {
+    height: 270px;
+    display: grid;
+    grid-template-rows: 1fr 85px;
+    padding-bottom: 30px;
+}
+
+
+.page10 .content .hex-mask {
+    margin: 0 70px;
+    mask-size: 158px;
+    width: 158px;
+    height: 182px;
+}
+
+.page10 .content div:first-of-type {
+    font-size: 15px;
+    text-transform: none;
+    text-align: end;
+}
+
+.page10 .content>div div:last-of-type {
+    text-align: start;
+}
+
+.page10 .content> div:last-of-type {
+    font-size: 0px;
+    align-self: end;
+}
+.page10 .content div:last-of-type a {
+    margin: 0 12px;
+    display: inline-block;
+}
+
+
+
+    
