@@ -626,10 +626,10 @@ svg.a-line {
 .page10 .hex-container {
     position: relative;
 }
-    .page10 .hex-container:first-of-type {
-        margin-top: 52px;
-        margin-bottom: 24px;
-    }
+.page10 .hex-container:first-of-type {
+    margin-top: 52px;
+    margin-bottom: 24px;
+}
 
 .page10 .hex-container:first-of-type svg {
     width:74px;
@@ -703,5 +703,74 @@ svg.a-line {
 }
 
 
+.page11 {
+    display: grid;
+    justify-items: center;
+    min-width: 1260px;
+    height: 100%;
+    grid-template-rows: 120px 1fr 210px;
+    grid-template-columns:1fr;
+    align-items: center;
+}
 
-    
+.page11 > div:nth-of-type(1) {
+    grid-row: 1/3;
+    background: url("/images/map.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.page11 > div:nth-of-type(3) {
+    grid-row: 3;
+    background: url("/images/footer.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.page11 .hex-container {
+    height: 120px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.page11 .hex-container svg {
+    height: 248px;
+    width: 216px;
+    margin-top: -128px;
+
+}
+
+.page11 .hex-container p {
+    left: 50%;
+    top: 14px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    width: 166px;
+    text-transform: none;
+    word-break: break-all;
+}
+.page11 > div:nth-of-type(3) > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 26px;
+    padding-right: 66px;
+}
+.page11 > div:nth-of-type(3) img {
+    display: inline-block;
+    margin-right:22px;
+}
+.page11 > div:nth-of-type(3) p {
+    display: inline-block;
+    color:white;
+}
