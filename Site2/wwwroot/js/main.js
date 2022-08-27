@@ -33,6 +33,9 @@ window.addEventListener("wheel", function (e) {
     }
     else {
         //console.log("down");
+        if (mouseCurrentPos <= mouseLowerMoveLimit + 10) {
+            window.location.href = '/Page2';
+        }
         if (mouseCurrentPos > mouseLowerMoveLimit) {
             MouseMove(mouseCurrentPos - 10);
         }
